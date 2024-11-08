@@ -1,0 +1,39 @@
+RectangleS 10 10 100 100 rouge 100 0
+RectangleS 20 20 70 70 bleu 100 1
+RectangleS 30 30 40 40 vert 100 4
+RectangleS 40 40 10 10 jaune 100 5
+CercleS  50 50 15 rouge 100 4
+# Test pour les différentes formes
+
+# Point
+Point 100 100 rouge 80
+
+# Ligne
+Ligne 50 50 200 200 bleu 90
+
+# Rectangle
+Rectangle 10 10 50 30 vert 100
+
+# Rectangle plein
+RectangleS 60 60 40 20 jaune 70
+
+# Carré
+Carre 150 150 50 cyan 60
+
+# Carré plein
+CarreS 200 200 40 magenta 80
+
+# Cercle
+Cercle 300 300 orange 100
+
+# Cercle plein
+CercleS 400 400 30 violet 90
+
+# Triangle
+Triangle 100 100 150 200 50 250 rouge 100
+
+# Triangle Plein
+Triangle 100 100 150 200 50 250 bleu 50
+
+
+
