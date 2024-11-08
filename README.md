@@ -52,16 +52,21 @@ Pour compiler et exécuter le projet, suivez les étapes suivantes :
 1. **Compilation**
 
    Utilisez un compilateur C++ pour compiler le projet. Voici un exemple de commande avec `g++` :
-      g++ main.cpp FileReader.cpp CImage.cpp CBitmap.cpp Point.cpp Rectangle.cpp Carre.cpp Ligne.cpp Cercle.cpp Triangle.cpp -o generateur_bitmap
+```bash
+   g++ main.cpp FileReader.cpp CImage.cpp CBitmap.cpp Point.cpp Rectangle.cpp Carre.cpp Ligne.cpp Cercle.cpp Triangle.cpp -o generateur_bitmap
+```
     
-2. **Exécution**
+3. **Exécution**
 
     Une fois compilé, lancez le programme avec les paramètres suivants :
-    ./generateur_bitmap fichier_initial.vec fichier_final.bmp [echelle]
+```bash
+   ./generateur_bitmap fichier_initial.vec fichier_final.bmp [echelle]
+```
+fichier_initial.vec : Fichier d'entrée contenant la description des formes.
 
-        fichier_initial.vec : Fichier d'entrée contenant la description des formes.
-        fichier_final.bmp : Nom du fichier de sortie, au format .bmp.
-        echelle (optionnel) : Facteur d'échelle appliqué aux coordonnées de chaque forme. Par défaut à 1.
+fichier_final.bmp : Nom du fichier de sortie, au format .bmp.
+
+echelle (optionnel) : Facteur d'échelle appliqué aux coordonnées de chaque forme. Par défaut à 1.
 
 ### Exemples d'utilisation
 
@@ -74,12 +79,12 @@ Pour compiler et exécuter le projet, suivez les étapes suivantes :
             Triangle 20 20 50 20 35 60 vert 100 0
             Carre 15 15 20 jaune 50 3
 
-            Dans cet exemple :
+   Dans cet exemple :
 
-            Le rectangle rouge se situe sur le plan z=1.
-            Le cercle bleu se situe sur le plan z=2.
-            Le triangle vert se situe sur le plan z=0 et sera tracé en arrière-plan.
-            Le carré jaune se situe sur le plan z=3, il sera donc tracé en dernier.
+   Le rectangle rouge se situe sur le plan z=1.
+   Le cercle bleu se situe sur le plan z=2.
+   Le triangle vert se situe sur le plan z=0 et sera tracé en arrière-plan.
+   Le carré jaune se situe sur le plan z=3, il sera donc tracé en dernier.
 
     Commandes d'exécution
 
